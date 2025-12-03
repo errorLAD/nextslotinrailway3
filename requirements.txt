@@ -1,61 +1,61 @@
 # Core Django
-Django==5.0.1
-Pillow==10.2.0
-python-decouple==3.8
-pytz==2024.1
+Django>=5.0,<5.1
+Pillow
+python-decouple
+pytz
 
 # Database
-psycopg2-binary==2.9.9
-dj-database-url==2.1.0
+psycopg2-binary
+dj-database-url
 
 # Caching & Task Queue
-redis==5.0.1
-django-redis==5.4.0
-celery==5.3.6
-django-celery-beat==2.5.0
+redis
+django-redis
+celery
+django-celery-beat
 
 # Payment Gateway
-razorpay==1.4.2
+razorpay
 
 # Email & SMS Notifications
-twilio==8.13.0
+twilio
 
 # DNS Verification for Custom Domains
-dnspython==2.6.1
+dnspython
 
 # Template Filters
-django-mathfilters==1.0.0
+django-mathfilters
 
 # Google Calendar API (PRO plan only)
-google-auth==2.27.0
-google-auth-oauthlib==1.2.0
-google-auth-httplib2==0.2.0
-google-api-python-client==2.118.0
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
 
 # AI Features (OpenAI)
-openai==1.12.0
+openai
 
 # Production Server
 gunicorn
 whitenoise
 
 # Production Email Services (Optional)
-sendgrid==6.11.0
-django-ses==3.5.2
+sendgrid
+django-ses
 
 # AWS S3 for Media Files (Optional)
-boto3==1.34.34
-django-storages==1.14.2
+boto3
+django-storages
 
 # Monitoring & Error Tracking (Optional)
-sentry-sdk==1.40.0
+sentry-sdk
 
 # Security & Performance
-django-cors-headers==4.3.1
-django-ratelimit==4.1.0
+django-cors-headers
+django-ratelimit
 
 # Database Backup (Optional)
-django-dbbackup==4.0.2
+django-dbbackup
 
 # Environment Management
-python-dotenv==1.0.1
+python-dotenv
