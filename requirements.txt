@@ -36,8 +36,8 @@ google-api-python-client==2.118.0
 openai==1.12.0
 
 # Production Server
-gunicorn==21.2.0
-whitenoise==6.6.0
+gunicorn
+whitenoise
 
 # Production Email Services (Optional)
 sendgrid==6.11.0
