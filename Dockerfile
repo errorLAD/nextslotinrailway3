@@ -29,8 +29,12 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy project files
 COPY . .
 
-# Collect static files
-RUN python manage.py collectstatic --noinput
+# Collect static files (with dummy database to avoid DB connection during build)
+ENV DATABASE_URL=sqlite:///tmp.db
+ENV SECRET_KEY=build-time-secret-key
+RUN python manage.py collectstatic --noinput --clear
+ENV DATABASE_URL=
+ENV SECRET_KEY=
 
 # Expose port
 EXPOSE 8000
